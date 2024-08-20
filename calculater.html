@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="c.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <img src="logo.png" alt="Logo" class="logo">
+            <ul class="nav-list">
+                <li class="list-item"><a href="#">Home</a></li>
+                <li class="list-item"><a href="#">About</a></li>
+                <li class="list-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <!-- Add any additional elements for the right side of the navbar if needed -->
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart-details">
+            <div class="product">
+                <p>Date of Birth:</p>
+            </div>
+            <div class="cost">
+                <input type="date" id="dob" name="dob">
+            </div>
+        </div>
+
+        <div class="cart-details">
+            <div class="product">
+                <p>Your Age:</p>
+            </div>
+            <div class="cost" id="age-output">
+                <p id="age">0</p>
+            </div>
+        </div>
+
+        <div class="buy">
+            <button onclick="calculateAge()">Calculate Age</button>
+        </div>
+    </div>
+
+    <script src="c.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
